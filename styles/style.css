@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria: #495057;
+    --cor-terciaria: #4682b4;
+    --cor-hover: #272727;
+
+    --fonte-primaria: "Inter", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*box-sizing: border-box;*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    min-height: 100%;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 5%;
+}
+
+.apresentacao{
+    padding: 2% 2% 13%;
+    display:flexbox; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao_campo{
+    border: none;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    font-size:medium; 
+    width: 681px;
+    height: 47px;
+    padding: 2% 1% 2% 2%;
+}
+.apresentacao_campo__regras{
+    color: var(--cor-secundaria);
+    font-size:medium; 
+    padding: 10% 1% 2% 2%;
+    flex-direction: row;
+    display: flex;
+   
+}
+
+.apresentacao_campo__botoes{
+    gap: 24px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.campo__botao__criptografar{
+    align-items: center;       /* Alinha verticalmente ao centro */
+    justify-content: center;   /* Alinha horizontalmente ao centro */
+    gap: 8px;
+    width: 120px;
+    height: 67px;
+    /*background: #0A3871;
+    border-radius: 8px;*/ 
+    color: #0A3871;
+    font-weight: 100;
+    pointer-events: auto;      /* Garante que o botão seja clicável */
+}
+
+.campo__botao__descriptografar{
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px;
+    width: 120px;
+    height: 67px;
+    /*background: #D8DFE8;
+    border-radius: 24px;*/
+    color:#0A3871;    
+    pointer-events: auto;
+}
+
+.campo__botao__copiar{
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px;
+    width: 120px;
+    height: 67px;
+    top: 50px;
+    /*background: #D8DFE8;
+    border-radius: 24px;*/
+    color:#0A3871;    
+    pointer-events: auto;
+    display: none;
+}
+
+.retangulo{
+    /* Rectangle 1 */
+    position: absolute;
+    width: 340px;
+    height: 490px;
+    left: 820px;
+    top: 1px;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.retangulo__imagem{
+
+    padding: 2% 1%;
+    gap: 4px;
+    max-width: 100%; 
+    max-height: 100%;
+}    
+
+.retangulo__imagem__titulo{
+    font-size:  1.25rem;
+    font-family: var(--fonte-primaria);
+    padding: 4%;
+}
+
+.retangulo__imagem__texto{
+    font-family: var(--fonte-primaria);
+    padding: 5%;
+    width: 80%;
+    align-items: center;
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}

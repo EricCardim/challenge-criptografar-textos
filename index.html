@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/Frame 6.png">
+    </header>
+    <main class="apresentacao">
+        <div>
+            <textarea id="texto" class="apresentacao_campo" type="text" placeholder="Digite seu texto"></textarea>
+        </div>
+        <div class="apresentacao_campo__regras">
+            <img src="./assets/Vector.png">
+            <p>Apenas letras minúsculas e sem acento.</p>
+        </div>                
+        <div class="apresentacao_campo__botoes">
+            <button onclick="criptografar()"    id="botaocrip" class="campo__botao__criptografar">Criptografar</button>
+            <button onclick="descriptografar()" id="botaodescrip" class="campo__botao__descriptografar">Descriptografar</button>
+            <button id="copiar" onclick="copiarTexto()" class="campo__botao__copiar">Copiar</button>            
+        </div>                
+        <div class="retangulo">
+            <img id="imagem" class="retangulo__imagem" src="./assets/High quality products 1 1.png">
+            <h1 id="titulo" class="retangulo__imagem__titulo">Nenhuma mensagem encontrada</h1>
+            <p  id="paragrafo" class="retangulo__imagem__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea id="resultado" class="retangulo__imagem__texto" style="display: none;"></textarea>
+        </div>
+        <script src="script.js"></script>        
+    </main>
+
+    <footer class="rodape">
+        <p> Desenvolvido por Eric Cardim</p>
+    </footer>
+    
+</body>
+</html>
